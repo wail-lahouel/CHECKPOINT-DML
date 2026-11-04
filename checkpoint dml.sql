@@ -29,4 +29,14 @@ VALUES
     (103, 203, 'Responsable de la recherche'),
     (101, 204, 'Spécialiste réseau');
 
+SELECT * FROM GestionEntreprise.dbo.Employe_Projet;
 
+UPDATE GestionEntreprise.dbo.Employe_Projet
+SET Role = 'Full Stack Developer'
+WHERE Projet_Num_P = 201; 
+
+DELETE FROM GestionEntreprise.dbo.Employe_Projet
+WHERE Employe_Num_E = 103;
+
+DELETE FROM GestionEntreprise.dbo.Employe
+WHERE Num_E = 103;
